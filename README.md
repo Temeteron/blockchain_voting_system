@@ -1,11 +1,11 @@
 # blockchain_voting_system
-Your First Decentralized Application. A tutorial to create a decentralized voting system and deploy it to the etherium testrpc blockchain (intended only for testing) which is free.
+Your First Decentralized Application. A tutorial to create a decentralized voting system and deploy it to the ethereum testrpc blockchain (intended only for testing) which is free.
 
 ## Dependencies
 
-* ethereumjs-testrpc (etherium test blockchain network, no need to download the whole network)
+* ethereumjs-testrpc (ethereum test blockchain network, no need to download the whole network)
 * web3 (the client that will be used to access this blockchain network)
-* solc (solidity is the language tha etherium uses and solc is the compiler)
+* solc (solidity is the language tha ethereum uses and solc is the compiler)
 
 ## Get started
 ```
@@ -16,7 +16,7 @@ $ npm install
 
 ## Usage
 
-1) On your terminal run the following command, which will create a localhost nodejs server to communicate with the test etherium blockchain. We will use that to vote.
+1) On your terminal run the following command, which will create a localhost nodejs server to communicate with the test ethereum blockchain. We will use that to vote.
 ```
 $ node_modules/.bin/testrpc
 ```
