@@ -1,0 +1,29 @@
+{
+  "name": "blockchain_voting_system",
+  "version": "1.0.0",
+  "description": "Your firest decentrilize application, deployed to test etherium network which is free. Gives 100 etherium-test coins. Using web3 library as the client to connect to the etherium blockchain test netwrok.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Temeteron/blockchain_voting_system.git"
+  },
+  "keywords": [
+    "blockchain",
+    "voting",
+    "dapps"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Temeteron/blockchain_voting_system/issues"
+  },
+  "homepage": "https://github.com/Temeteron/blockchain_voting_system#readme",
+  "dependencies": {
+    "ethereumjs-testrpc": "^4.1.3",
+    "solc": "^0.4.18",
+    "web3": "^0.20.1"
+  }
+}
