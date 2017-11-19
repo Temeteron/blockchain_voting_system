@@ -32,12 +32,18 @@ $ node
 > solc = require('solc')
 ```
 4) Compile your code.
+
 4.1) compileddCode.contracts[‘:Voting’].bytecode: This is the bytecode you get when the source code in Voting.sol is compiled. This is the code which will be deployed to the blockchain.
+
 4.2) compiledCode.contracts[‘:Voting’].interface: This is an interface or template of the contract (called abi) which tells the contract user what methods are available in the contract. Whenever you have to interact with the contract in the future, you will need this abi definition.
+
 4.3) You first create a contract object (VotingContract below) which is used to deploy and initiate contracts in the blockchain. VotingContract.new below deploys the contract to the blockchain. The first argument is an array of candidates who are competing in the election which is pretty straightforward. 
 The second argument: 
+
 4.3.1) data: This is the compiled bytecode which we deploy to the blockchain, 
+
 4.3.2) from: The blockchain has to keep track of who deployed the contract. In this case, we are just picking the first account we get back from calling web3.eth.accounts to be the owner of this contract (who will deploy it to the blockchain). Remember that web3.eth.accounts returns an array of 10 test accounts testrpc created when we started the test blockchain. In the live blockchain, you can not just use any account. You have to own that account and unlock it before transacting. You are asked for a passphrase while creating an account and that is what you use to prove your ownership of that account. Testrpc by default unlocks all the 10 accounts for convenience. 
+
 4.3.3) gas: It costs money to interact with the blockchain. This money goes to miners who do all the work to include your code in the blockchain. You have to specify how much money you are willing to pay to get your code included in the blockchain and you do that by setting the value of ‘gas’. The ether balance in your ‘from’ account will be used to buy gas. The price of gas is set by the network.
 ```
 > compiledCode = solc.compile(code)
